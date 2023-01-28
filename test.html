@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>GEN Z NUMNUM</title>
+    <link rel="icon" type="image/png" href="Favicon.jpg"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Food Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+body {
+  background-color: #FCF5E5;
+}
+{box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+    <section id="Home">
+        <nav style="background-color: #FAA0A0">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+
+            <ul>
+                <li><a href="#Home"><b>Home</a></li>
+                <li><a href="#Menu"><b>Menu</a></li>
+                <li><a href="#Gallery"><b>Gallery</a></li>
+                <li><a href="#About"><b>About</a></li>
+                <li><a href="#Contact"><b>Contact</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+        </nav>
+
+
+        <br> <br>
+        <br> <br>
+        <br> <br>
+        <br> <br>
+        <br> <br>
+        <br> <br>
+        <br> <br>
+        <br> <br>
+        <br> <br>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Fries.jpg" style="width:50%">
+  <div class="text">NUMNUM fries</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="S.jpg" style="width:50%">
+  <div class="text">NUMNUM SHAKE</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="waffle.jpg" style="width:50%">
+  <div class="text">NUMNUM WAFFLE</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 3 seconds
+}
+</script>
+
+        <div class="main">
+
+            <div class="main_text">
+                <h1>100% Yummy
+                    <img src="Ze.jpg" style="float:right;width:350px;height:330px; border:5px Solid red;">
+                    <span><br>Just like</span><br>Gen Zs</h1>
+            </div>
+
+        </div>
+
+    </section>
+    
+    
+    <!--Menu-->
+
+    <font align="center" size="7">
+        <br> <br>
+        <br> <br>
+        <br> <br>
+        <br> <br>
+        <h1>OUR MENU</h1>
+        </font>
+
+        <div class="gallery">
+            <div class="content">
+                <img src="7.jpg">
+                <h3>STREET FOODS</h3>
+                <h6></h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                </ul>
+                <button class="order-1"><td><a href="street.html">Click Here for Menus</a></td></button>
+            </div>
+    
+            <div class="content">
+                <img src="e.jpg">
+                <h3>Juice</h3>
+                <h6></h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <button class="order-2"><td><a href="juice.html">Click Here for Menus</a></td></button>
+            </div>
+    
+    
+            <div class="content">
+                <img src="shak.jpg">
+                <h3>SHAKES</h3>
+                <h6></h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                </ul>
+                <button class="order-3"><td><a href="shake.html">Click Here for Menus</a></td></button>
+            </div>
+    
+            <div class="content">
+                <img src="snack.jpg">
+                <h3>OTHERS</h3>
+                <h6></h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                </ul>
+                <button class="order-4"><td><a href="others.html">Click Here for Menus</a></td></button>
+            </div>
+        </div>    
+    
+
+
+
+    
+</body>
+</html>
