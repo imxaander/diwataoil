@@ -24,7 +24,7 @@ function openTab(evt, tabName) {
 }
 
 
-var slideIndex = [1,5];
+var slideIndex = [1,1];
 var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
 showDivs(1, 0);
 showDivs(1, 1);
