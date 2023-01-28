@@ -50,14 +50,14 @@ include 'php/connection.php';
                             <div class="product-card">
                                     <div class="product-image">
                                         <div class="w3-content w3-display-container">
-                                            <img class="mySlides1" src="img/orange.jpg" style="width:100%">
-                                            <img class="mySlides1" src="img/orange_packaging.jpg" style="width:100%">
-                                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
-                                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+                                            <img class="mySlides<?php $row['id']?>" src="img/<?php $row['image1']?>" style="width:100%">
+                                            <img class="mySlides<?php $row['id']?>" src="img/<?php $row['image2']?>" style="width:100%">
+                                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, <?php $row['id']?>)">&#10094;</button>
+                                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, <?php $row['id']?>)">&#10095;</button>
                                         </div>
                                         <br>
                                     </div>
-                                    <div class="product-name">Orange</div>
+                                    <div class="product-name"><?php $row['name']?></div>
                             </div>
                 <?php  }
                 ?>
