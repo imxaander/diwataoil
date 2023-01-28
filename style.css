@@ -1,5 +1,5 @@
 :root{
-    --headings :  #57611e;
+    --headings :  #85971d;
     --sub-headings: ;
     --content: ;
     --sub-content: ;
@@ -10,6 +10,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
  .container{
     width: 100%;
     height: 100vh;
@@ -20,6 +21,7 @@
     padding-right: 8%;
     box-sizing: border-box;
 }
+
 .navbar{
     height: 12%;
     display: flex;
@@ -64,6 +66,26 @@ h1{
 }
 p{
     color: var(--headings);
-    font-size: 11px;
+    font-size: 13px;
     line-height: 15px;
+    text-indent: 30px;
 }
+#tab li a:hover {
+    background-color: var(--headings);
+    color: white;
+  }
+  
+  /* Create an active/current tablink class */
+  #tab li a.active {
+    background-color: var(--headings);
+    color: white;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    transition: all 0.5s;
+  }
+  #Home{
+    display: flex;
+  }
