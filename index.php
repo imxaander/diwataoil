@@ -2,6 +2,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Diwata Oil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6b9c8a6e93.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -34,7 +35,12 @@
 
         <div class="row tabcontent" id="Products">
             <div class="col">
-                <h1>Products Teh</h1>
+               <div class="product-card">
+                    <div class="product-image">
+                        <img src="img" alt="">
+                    </div>
+                    <div class="product-name">Name : Name</div>
+               </div>
             </div>
             <div class="col"></div>
         </div>
