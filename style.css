@@ -1,3 +1,10 @@
+:root{
+    --headings :  #57611e;
+    --sub-headings: ;
+    --content: ;
+    --sub-content: ;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -26,7 +33,7 @@
     width: 30px;
     cursor: pointer;
     margin-left: 40px;
-    color: #fff;
+    color: var(--headings);
 }
 nav{
     flex: 1;
@@ -39,7 +46,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: var(--headings);
     font-size: 13px;
 }
 .row{
@@ -51,12 +58,12 @@ nav ul li a{
     flex-basis: 50%;
 }
 h1{
-    color:#fff;
+    color: var(--headings);
     font-size: 100px;
 
 }
 p{
-    color: #fff;
+    color: var(--headings);
     font-size: 11px;
     line-height: 15px;
 }
