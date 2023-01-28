@@ -1,6 +1,6 @@
 :root{
     --headings :  #85971d;
-    --sub-headings: ;
+    --sub-headings: #85971d;
     --content: ;
     --sub-content: ;
 
@@ -62,7 +62,7 @@ nav ul li a{
     flex-basis: 50%;
 }
 h1{
-    color: var(--headings);
+    color: var(--sub-headings);
     font-size: 100px;
 
 }
