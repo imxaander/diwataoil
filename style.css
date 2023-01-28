@@ -108,9 +108,11 @@ p{
      justify-content: center;
      backdrop-filter: blur(15px);
   }
+
   #Products{
     display: flex;
     margin: 5%;
+    backdrop-filter: blur(5px);
   }
   .product-card{
     padding: 20px;
