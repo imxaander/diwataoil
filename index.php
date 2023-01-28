@@ -1,5 +1,5 @@
 <?php
-include '/php/conneciton.php';
+include '../php/conneciton.php';
 
 
 ?>
