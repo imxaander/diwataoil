@@ -41,40 +41,29 @@ include 'php/connection.php';
 
         <div class="row tabcontent" id="Products">
             <div class="col">
-               <div class="product-card">
-                    <div class="product-image">
-                        
-                        <div class="w3-content w3-display-container">
-                            <img class="mySlides1" src="img/orange.jpg" style="width:100%">
-                            <img class="mySlides1" src="img/orange_packaging.jpg" style="width:100%">
-                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
-                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
-                          </div>
-                          <br>
-                          
-                          <!-- The dots/circles -->
+
+                <?php
+                    $sql = "SELECT * FROM products";
+                    $result = mysqli_query($con, $sql);
+
+                    while($row = mysqli_fetch_array($result)){?>
+                            <div class="product-card">
+                                    <div class="product-image">
+                                        <div class="w3-content w3-display-container">
+                                            <img class="mySlides1" src="img/orange.jpg" style="width:100%">
+                                            <img class="mySlides1" src="img/orange_packaging.jpg" style="width:100%">
+                                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+                                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div class="product-name">Orange</div>
+                            </div>
+                <?php  }
+                ?>
 
 
-                    </div>
-                    <div class="product-name">Orange</div>
-               </div>
 
-               <div class="product-card">
-                <div class="product-image">
-                    
-                    <div class="w3-content w3-display-container">
-                        <img class="mySlides2" src="img/lemon.jpg" style="width:100%">
-                        <img class="mySlides2" src="img/lemon_packaging.jpg" style="width:100%">
-                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
-                      </div>
-                      <br>
-                      
-                      <!-- The dots/circles -->
-
-                </div>
-                <div class="product-name">Lemon</div>
-           </div>
             </div>
 
         </div>
