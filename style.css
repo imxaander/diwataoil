@@ -1,8 +1,9 @@
 :root{
     --headings :  #85971d;
-    --sub-headings: #85971d;
+    --sub-headings: #fff;
     --content: ;
     --sub-content: ;
+    --brown: #ce9e63;
 
 }
 *{
@@ -17,15 +18,14 @@
     background-image: url(img/essentialoil.jpg);
     background-position: center;
     background-size: cover;
-    padding-left: 8%;
-    padding-right: 8%;
     box-sizing: border-box;
 }
 
 .navbar{
-    height: 12%;
+    height: 10%;
     display: flex;
     align-items: center;
+    background-color: var(--brown);
 }
 .logo{
     width: 210px;
@@ -50,21 +50,23 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: var(--headings);
-    font-size: 13px;
+    font-size: 15px;
     padding: 10px;
 }
 .row{
     display: flex;
     height: 88%;
     align-items: center;
+    background-color: ;
+    padding: 50px;
+    border-radius: 20px;
 }
 .col{
     flex-basis: 50%;
 }
 h1{
-    color: var(--sub-headings);
+    color: var(--headings);
     font-size: 100px;
-
 }
 p{
     color: var(--headings);
@@ -93,4 +95,12 @@ p{
   }
   #Home{
     display: flex;
+  }
+  @media (max-width: 813px){
+    nav ul li a{
+        text-decoration: none;
+        color: var(--headings);
+        font-size: 13px;
+        padding: 10px;
+    }
   }
