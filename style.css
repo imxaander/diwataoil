@@ -111,7 +111,9 @@ p{
 
   #Products{
     display: flex;
-    margin: 5%;
+    width: 100%;
+    padding: 5%;
+    margin: auto;
     backdrop-filter: blur(15px);
   }
   .product-card{
