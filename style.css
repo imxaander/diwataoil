@@ -75,14 +75,14 @@ p{
 #tab li a:hover {
     background-color: var(--headings);
     color: white;
-    border-radius: 5px;
+    border-radius: 20px;
   }
   
   /* Create an active/current tablink class */
   #tab li a.active {
     background-color: var(--headings);
     color: white;
-    border-radius: 5px;
+    border-radius: 20px;
 
   }
   
