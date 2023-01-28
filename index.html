@@ -1,17 +1,18 @@
 <?php
-include '../php/conneciton.php';
+include 'php/connection.php';
 
 
 ?>
 <html> 
 <head>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Diwata Oil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6b9c8a6e93.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <div class="container">
@@ -42,12 +43,40 @@ include '../php/conneciton.php';
             <div class="col">
                <div class="product-card">
                     <div class="product-image">
-                        <img src="img" alt="">
+                        
+                        <div class="w3-content w3-display-container">
+                            <img class="mySlides1" src="img/orange.jpg" style="width:100%">
+                            <img class="mySlides1" src="img/orange_packaging.jpg" style="width:100%">
+                            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+                            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+                          </div>
+                          <br>
+                          
+                          <!-- The dots/circles -->
+
+
                     </div>
-                    <div class="product-name">Name : Name</div>
+                    <div class="product-name">Orange</div>
                </div>
+
+               <div class="product-card">
+                <div class="product-image">
+                    
+                    <div class="w3-content w3-display-container">
+                        <img class="mySlides2" src="img/lemon.jpg" style="width:100%">
+                        <img class="mySlides2" src="img/lemon_packaging.jpg" style="width:100%">
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+                      </div>
+                      <br>
+                      
+                      <!-- The dots/circles -->
+
+                </div>
+                <div class="product-name">Lemon</div>
+           </div>
             </div>
-            <div class="col"></div>
+
         </div>
 
         <div class="row tabcontent" id="About">
@@ -57,5 +86,6 @@ include '../php/conneciton.php';
             <div class="col"></div>
         </div>
     </div>
+    <script src="script.js" ></script>
 </body>
 </html>
