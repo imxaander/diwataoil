@@ -23,9 +23,12 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
 showDivs(1, 0);
-showDivs(1, 1);
+showDivs(1, 2);
+showDivs(1, 3);
+showDivs(1, 4);
+showDivs(1, 5);
 
 function plusDivs(n, no) {
   showDivs(slideIndex[no] += n, no);
