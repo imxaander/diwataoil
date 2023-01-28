@@ -4,8 +4,19 @@
     --content: ;
     --sub-content: ;
     --brown: #ce9e63;
+    --dark-brown: #6a4520;
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@font-face {
+    font-family: Alice;
+    src: url('/fonts/Alice-Regular.ttf');
+}  
+
+@font-face {
+    font-family: Calligraphy2;
+    src: url('/fonts/Cream Cake.otf');
+}   
 *{
     margin: 0;
     padding: 0;
@@ -15,10 +26,11 @@
  .container{
     width: 100%;
     height: 100vh;
-    background-image: url(img/essentialoil.jpg);
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
+    background-image: url('img/essentialoil.jpg');
+    backdrop-filter: blur(5px);
 }
 
 .navbar{
@@ -34,7 +46,7 @@
 .menu-icon{
     width: 30px;
     cursor: pointer;
-    margin-left: 40px;
+
     color: var(--headings);
 }
 nav{
@@ -45,45 +57,38 @@ nav ul li{
     list-style: none;
     display: inline-block;
     margin-left: 60px;
-
 }
 nav ul li a{
     text-decoration: none;
-    color: var(--headings);
+    color: #fff;
     font-size: 15px;
     padding: 10px;
 }
 .row{
     display: flex;
-    height: 88%;
     align-items: center;
     background-color: ;
-    padding: 50px;
     border-radius: 20px;
 }
 .col{
-    flex-basis: 50%;
+
 }
-h1{
-    color: var(--headings);
-    font-size: 100px;
-}
+
 p{
-    color: var(--headings);
-    font-size: 13px;
+    color: var(--sub-headings);
+    font-size: 20px;
     line-height: 15px;
-    text-indent: 30px;
 }
 #tab li a:hover {
-    background-color: var(--headings);
-    color: white;
+    background-color: var(--dark-brown);
+    color: #fff;
     border-radius: 20px;
   }
   
   /* Create an active/current tablink class */
   #tab li a.active {
-    background-color: var(--headings);
-    color: white;
+    background-color: var(--dark-brown);
+    color: #fff;
     border-radius: 20px;
 
   }
@@ -95,12 +100,59 @@ p{
   }
   #Home{
     display: flex;
+    height: 90%;
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+          align-items: center;
+    -webkit-box-pack: center;
+       -ms-flex-pack: center;
+     justify-content: center;
+     backdrop-filter: blur(15px);
+  }
+#home-intro-text{
+    
+  z-index: 2;
+}
+  #home-intro-text h1{
+        font-size: 170px;
+      color: #fff;
+      font-family: Calligraphy2;
+        animation: flicker 1.5s infinite alternate;
+  }
+    #home-intro-text p{
+        font-family: 'Source Serif Pro';
+    }
+
+    #home-background{
+
+    }
+
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+  @keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px var(--brown),
+          0 0 21px var(--brown),
+          0 0 42px var(--brown),
+          0 0 82px var(--brown),
+          0 0 92px var(--brown),
+          0 0 102px var(--brown),
+          0 0 151px var(--dark-brown);
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
   }
   @media (max-width: 813px){
-    nav ul li a{
-        text-decoration: none;
-        color: var(--headings);
-        font-size: 13px;
-        padding: 10px;
-    }
   }

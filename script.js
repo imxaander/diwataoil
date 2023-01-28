@@ -18,3 +18,4 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "flex";
   evt.currentTarget.className += " active";
 }
+document.getElementById('home-button').focus();
