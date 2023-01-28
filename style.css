@@ -45,11 +45,13 @@ nav ul li{
     list-style: none;
     display: inline-block;
     margin-left: 60px;
+    padding: 10
 }
 nav ul li a{
     text-decoration: none;
     color: var(--headings);
     font-size: 13px;
+    padding: 20px;
 }
 .row{
     display: flex;
@@ -73,12 +75,15 @@ p{
 #tab li a:hover {
     background-color: var(--headings);
     color: white;
+    border-radius: 5px;
   }
   
   /* Create an active/current tablink class */
   #tab li a.active {
     background-color: var(--headings);
     color: white;
+    border-radius: 5px;
+
   }
   
   /* Style the tab content */
