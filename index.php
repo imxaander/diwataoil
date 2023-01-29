@@ -51,8 +51,8 @@ include 'php/connection.php';
                             <div class="product-card">
                                     <div class="product-image">
                                         <div class="w3-content w3-display-container">
-                                            <img class="mySlides<?php echo $row['id']?>" src="img/<?php echo $row['image_1']?>" style="width:100%">
-                                            <img class="mySlides<?php echo $row['id']?>" src="img/<?php echo $row['image_2']?>" style="width:100%">
+                                            <img class="mySlides<?php echo $row['id']?> fade" src="img/<?php echo $row['image_1']?>" style="width:100%">
+                                            <img class="mySlides<?php echo $row['id']?> fade" src="img/<?php echo $row['image_2']?>" style="width:100%">
                                             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, <?php echo $row['id'] -1?>)">&#10094;</button>
                                             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, <?php echo $row['id'] - 1?>)">&#10095;</button>
                                         </div>
