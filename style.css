@@ -115,6 +115,7 @@ p{
     padding: 5%;
     margin: auto;
     backdrop-filter: blur(15px);
+    transition: all 0.3s;
   }
   .product-card{
     padding: 20px;
@@ -148,6 +149,15 @@ p{
       color: #fff;
       font-family: Calligraphy2;
         animation: flicker 1.5s infinite alternate;
+  }
+  .neon-text{
+    font-size: 170px;
+      color: #fff;
+      font-family: Calligraphy2;
+        animation: flicker 1.5s infinite alternate;
+  }
+  .centered{
+    text-align: center;
   }
     #home-intro-text p{
         font-family: 'Source Serif Pro';

@@ -32,7 +32,7 @@ include 'php/connection.php';
             <div class="col">
                 <div id="home-background" class="blur-image"><br></div>
                 <div id="home-intro-text">
-                    <h1>Diwata Oil</h1>
+                    <h1 class="neon-text">Diwata Oil</h1>
                     <p> Diwata Oil's essential oil has great advantages and qualities that were exclusively created by our manufacturer.
                     </p>
                 </div>
@@ -40,8 +40,9 @@ include 'php/connection.php';
         </div>
 
         <div class="row tabcontent" id="Products">
+            
             <div class="col">
-
+            <h1 class="neon-text centered">Products</h1>
                 <?php
                     $sql = "SELECT * FROM products";
                     $result = mysqli_query($con, $sql);
