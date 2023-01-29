@@ -68,7 +68,7 @@ include 'php/connection.php';
                                         <br>
                                     </div>
                                     <a href="#product-details" data-id="<?php echo $row['id']?>" class="product-items">
-                                    <div class="product-name fade"><?php echo $row['name']?></div>
+                                    <div class="product-name fade" style="font-family: BodyFont;"><?php echo $row['name']?></div>
                                     </a>
                             </div>
                             
