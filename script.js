@@ -19,7 +19,13 @@ function openTab(evt, tabName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tabName).style.display = "flex";
+
+  if(tabName != "Home"){
+    document.getElementById(tabName).style.display = "block";
+  }else{
+    document.getElementById(tabName).style.display = "flex";
+  }
+
   evt.currentTarget.className += " active";
 }
 
