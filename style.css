@@ -271,11 +271,11 @@ p{
     animation-duration: 1.5s;
   }
   #Products .col{
-    width: 960px;
+    width: 1020px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 60px;
     
   }
   
