@@ -28,7 +28,7 @@
     width: 100%;
     height: 100vh;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     box-sizing: border-box;
     background-image: url('img/essentialoil.jpg');
     backdrop-filter: blur(5px);
