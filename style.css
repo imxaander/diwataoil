@@ -271,6 +271,7 @@ p{
     animation-duration: 1.5s;
   }
   #Products .col{
+    width: 920px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
