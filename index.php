@@ -40,9 +40,9 @@ include 'php/connection.php';
         </div>
 
         <div class="row tabcontent" id="Products">
-            
+        <h1 class="neon-text centered">Products</h1>
             <div class="col">
-            <h1 class="neon-text centered">Products</h1>
+            
                 <?php
                     $sql = "SELECT * FROM products";
                     $result = mysqli_query($con, $sql);
