@@ -48,6 +48,7 @@ include 'php/connection.php';
                     $result = mysqli_query($con, $sql);
 
                     while($row = mysqli_fetch_array($result)){?>
+                            <a href="?hi">
                             <div class="product-card">
                                     <div class="product-image">
                                         <div class="w3-content w3-display-container">
@@ -60,6 +61,7 @@ include 'php/connection.php';
                                     </div>
                                     <div class="product-name"><?php echo $row['name']?></div>
                             </div>
+                            </a>
                 <?php  }
                 ?>
 
