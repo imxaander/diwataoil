@@ -11,12 +11,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
 @font-face {
     font-family: Alice;
-    src: url('/fonts/Alice-Regular.ttf');
+    src: url('fonts/Alice-Regular.ttf');
 }  
 
 @font-face {
     font-family: Calligraphy2;
-    src: url('/fonts/Cream Cake.otf');
+    src: url('fonts/Cream Cake.otf');
 }   
 *{
     margin: 0;
