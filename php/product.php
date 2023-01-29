@@ -16,7 +16,7 @@ if(isset($_GET["id"])){
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 5)">&#10095;</button>
         </div>
         <div id="product-details-text" style="color : <?php echo $row['text_color']?>!important">
-                <p style="color : <?php echo $row['text_color']?>!important; font-size: 30px" class="centered"><?php echo $row['name']?></p>
+                <p style="color : <?php echo $row['text_color']?>!important; font-size: 30px" class="centered"><b><?php echo $row['name']?></b></p>
                 <br><br>
                 <p id="product-description"style="color : <?php echo $row['text_color']?>!important"><?php echo $row['description']?></p>
                 <br>
