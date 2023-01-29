@@ -26,7 +26,6 @@
 
  .container{
     width: 100%;
-    height: 100vh;
     background-position: center;
     background-size: contain;
     box-sizing: border-box;
@@ -113,6 +112,7 @@ p{
     display: flex;
     width: 100%;
     padding: 5%;
+    padding-top: 0px;
     margin: auto;
     backdrop-filter: blur(15px);
     transition: all 0.3s;
