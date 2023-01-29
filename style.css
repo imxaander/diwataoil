@@ -497,7 +497,7 @@ border-radius: 24px;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 90%;
+    width: 90%!important;
     height: 350px;
     position: fixed;
     top: 50%;
